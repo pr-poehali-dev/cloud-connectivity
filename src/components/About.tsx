@@ -60,7 +60,7 @@ export default function About() {
               <Card>
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
-                    <div className="bg-primary/10 p-3 rounded-full">
+                    <div className="bg-muted p-3 rounded-full">
                       <Users className="h-6 w-6 text-primary" />
                     </div>
                     <div>
@@ -85,7 +85,7 @@ export default function About() {
               <Card>
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
-                    <div className="bg-primary/10 p-3 rounded-full">
+                    <div className="bg-muted p-3 rounded-full">
                       <Lightbulb className="h-6 w-6 text-primary" />
                     </div>
                     <div>
@@ -110,7 +110,7 @@ export default function About() {
               <Card>
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
-                    <div className="bg-primary/10 p-3 rounded-full">
+                    <div className="bg-muted p-3 rounded-full">
                       <Heart className="h-6 w-6 text-primary" />
                     </div>
                     <div>
