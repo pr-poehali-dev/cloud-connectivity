@@ -81,15 +81,17 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="relative aspect-square max-w-md mx-auto"
+            className="flex justify-center"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5 rounded-full"></div>
-            <div className="absolute inset-4 bg-muted rounded-full overflow-hidden">
-              <img
-                src="https://cdn.poehali.dev/projects/296e8033-6458-4305-8c7a-be942dcce946/bucket/eb9793ec-9f56-44fa-b4c1-4773feace815.jpg"
-                alt="Сергей Золотухин"
-                className="w-full h-full object-cover"
-              />
+            <div className="relative w-72 h-72 md:w-96 md:h-96">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5 rounded-full"></div>
+              <div className="absolute inset-4 rounded-full overflow-hidden">
+                <img
+                  src="https://cdn.poehali.dev/projects/296e8033-6458-4305-8c7a-be942dcce946/bucket/eb9793ec-9f56-44fa-b4c1-4773feace815.jpg"
+                  alt="Сергей Золотухин"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
             </div>
           </motion.div>
         </div>
