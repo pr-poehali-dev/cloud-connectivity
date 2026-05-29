@@ -31,9 +31,7 @@ export default function Navbar() {
   const navLinks = [
     { name: "Главная", href: "home" },
     { name: "Обо мне", href: "about" },
-    { name: "Навыки", href: "tech-stack" },
     { name: "Кейсы", href: "projects" },
-    { name: "Отзывы", href: "testimonials" },
     { name: "Контакты", href: "contact" },
   ]
 
