@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Code, Lightbulb, Rocket } from "lucide-react"
+import { Lightbulb, Users, Heart } from "lucide-react"
 
 export default function About() {
   const fadeIn = {
@@ -23,7 +23,7 @@ export default function About() {
           <Badge variant="outline" className="mb-4">
             Обо мне
           </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Кто я</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Кто я такой</h2>
           <div className="w-20 h-1 bg-primary mx-auto"></div>
         </motion.div>
 
@@ -35,20 +35,17 @@ export default function About() {
             transition={{ duration: 0.5, delay: 0.2 }}
             variants={fadeIn}
           >
-            <h3 className="text-2xl font-bold mb-4">Увлеченный разработчик</h3>
+            <h3 className="text-2xl font-bold mb-4">Продуктовый дизайнер</h3>
             <p className="text-muted-foreground mb-6">
-              Я разработчик с опытом более 5 лет, создаю чистые, эффективные и удобные приложения.
-              За это время работал над проектами разного масштаба — от сайтов для малого бизнеса
-              до сложных корпоративных систем.
+              Привет! Меня зовут Сергей, я — продуктовый дизайнер. Создаю понятные и удобные интерфейсы,
+              которые помогают решать реальные задачи пользователей и бизнеса.
             </p>
             <p className="text-muted-foreground mb-6">
-              Мой путь в разработке начался в университете, где я открыл для себя радость решения
-              сложных задач через код. С тех пор постоянно учусь и развиваю навыки, чтобы идти
-              в ногу с технологиями.
+              В работе опираюсь на принципы ясности, системности и эмпатии. Мне важно понимать контекст,
+              цели и поведение пользователя, чтобы находить действительно работающие решения.
             </p>
             <p className="text-muted-foreground">
-              Когда не пишу код, изучаю новые технологии, участвую в open-source проектах
-              или делюсь знаниями в блоге и сообществах.
+              Верю, что хороший дизайн — это не про украшения, а про смысл и пользу.
             </p>
           </motion.div>
 
@@ -64,13 +61,13 @@ export default function About() {
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <div className="bg-primary/10 p-3 rounded-full">
-                      <Code className="h-6 w-6 text-primary" />
+                      <Users className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h4 className="text-xl font-semibold mb-2">Чистый код</h4>
+                      <h4 className="text-xl font-semibold mb-2">Эмпатия к пользователю</h4>
                       <p className="text-muted-foreground">
-                        Пишу поддерживаемый, масштабируемый и эффективный код,
-                        следуя лучшим практикам и стандартам индустрии.
+                        Изучаю поведение и цели пользователей, чтобы создавать интерфейсы,
+                        которые работают на практике, а не только выглядят красиво.
                       </p>
                     </div>
                   </div>
@@ -92,10 +89,10 @@ export default function About() {
                       <Lightbulb className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h4 className="text-xl font-semibold mb-2">Решаю задачи</h4>
+                      <h4 className="text-xl font-semibold mb-2">Ясность и системность</h4>
                       <p className="text-muted-foreground">
-                        Люблю разбираться со сложными задачами и находить элегантные решения
-                        через креативный подход.
+                        Проектирую системно: от структуры информации до деталей взаимодействия.
+                        Каждое решение имеет смысл и обоснование.
                       </p>
                     </div>
                   </div>
@@ -114,13 +111,13 @@ export default function About() {
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <div className="bg-primary/10 p-3 rounded-full">
-                      <Rocket className="h-6 w-6 text-primary" />
+                      <Heart className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h4 className="text-xl font-semibold mb-2">Быстро учусь</h4>
+                      <h4 className="text-xl font-semibold mb-2">Дизайн ради пользы</h4>
                       <p className="text-muted-foreground">
-                        Быстро адаптируюсь к новым технологиям и средам,
-                        постоянно расширяя свой набор навыков.
+                        Хороший дизайн — это не про украшения, а про смысл.
+                        Создаю продукты, которые приносят реальную ценность.
                       </p>
                     </div>
                   </div>

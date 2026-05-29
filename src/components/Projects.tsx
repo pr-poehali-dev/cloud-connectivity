@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
-import { ExternalLink, Github, ChevronDown } from "lucide-react"
+import { ExternalLink, ChevronDown } from "lucide-react"
 
 interface Project {
   id: number
@@ -15,7 +15,6 @@ interface Project {
   tags: string[]
   features: string[]
   demoLink: string
-  githubLink: string
   fullDescription: string
 }
 
@@ -31,106 +30,111 @@ export default function Projects() {
   const projects: Project[] = [
     {
       id: 1,
-      title: "E-Commerce платформа",
-      shortDescription: "Полнофункциональная платформа интернет-магазина.",
-      description:
-        "Полнофункциональная e-commerce платформа с управлением товарами, корзиной и обработкой платежей.",
+      title: "Мобильное приложение для банка",
+      shortDescription: "Редизайн ключевых сценариев для повышения конверсии.",
+      description: "Полный редизайн мобильного банкинга: от исследования до финального UI.",
       image: "/placeholder.svg?height=400&width=600",
-      tags: ["C++", "Qt", "SQLite", "CMake"],
+      tags: ["UX Research", "UI Design", "Figma", "Прототипирование"],
       features: [
-        "Система управления складом",
-        "Отслеживание остатков в реальном времени",
-        "Безопасная обработка платежей",
-        "Панель управления заказами",
-        "Аналитика клиентов",
+        "Проведено 12 глубинных интервью",
+        "Выявлены ключевые точки боли в онбординге",
+        "Разработана новая информационная архитектура",
+        "Создан интерактивный прототип",
+        "Конверсия регистрации выросла на 34%",
       ],
       demoLink: "#",
-      githubLink: "#",
       fullDescription:
-        "E-commerce платформа предоставляет бизнесу полное решение для онлайн-продаж. Построена на C++ и Qt для высокой производительности и кроссплатформенности. Включает адаптивный дизайн, каталог товаров с фильтрацией и поиском, функционал корзины, безопасную оплату, авторизацию и админ-панель для управления товарами, заказами и клиентами.",
+        "Проект по редизайну мобильного банковского приложения. Начали с глубинных интервью с пользователями и анализа аналитики — выявили критические проблемы в сценарии онбординга. Пересмотрели информационную архитектуру, упростили навигацию и переработали ключевые экраны. Результат: конверсия регистрации выросла на 34%, а оценка в сторах поднялась с 3.2 до 4.6.",
     },
     {
       id: 2,
-      title: "Система управления задачами",
-      shortDescription: "Совместная работа над задачами с обновлениями в реальном времени.",
-      description: "Приложение для совместной работы над задачами с обновлениями в реальном времени.",
+      title: "B2B SaaS-платформа",
+      shortDescription: "Дизайн-система и новый дашборд для корпоративного клиента.",
+      description: "Создание дизайн-системы и переработка аналитического дашборда.",
       image: "/placeholder.svg?height=400&width=600",
-      tags: ["Java", "Spring Boot", "React", "PostgreSQL"],
+      tags: ["Design System", "Dashboard", "B2B", "Figma"],
       features: [
-        "Совместная работа в реальном времени",
-        "Зависимости между задачами",
-        "Распределение ресурсов",
-        "Отслеживание прогресса",
-        "Управление командой",
+        "Аудит существующего интерфейса",
+        "Построена дизайн-система с 200+ компонентов",
+        "Разработан новый дашборд с аналитикой",
+        "Сокращено время онбординга новых сотрудников",
+        "Снижено количество обращений в поддержку на 40%",
       ],
       demoLink: "#",
-      githubLink: "#",
       fullDescription:
-        "Система управления задачами помогает командам эффективно организовывать и отслеживать работу. Построена на Java Spring Boot (backend) и React (frontend). Включает создание и назначение задач, дедлайны и напоминания, отслеживание прогресса, вложения файлов, комментарии и обсуждения, командные пространства и обновления в реальном времени.",
+        "Крупный B2B-клиент пришёл с проблемой: интерфейс платформы был настолько сложным, что новые сотрудники тратили недели на обучение. Провели аудит, выявили 80+ проблем с UX. Создали дизайн-систему с нуля, переработали дашборд и главные рабочие сценарии. Количество обращений в поддержку снизилось на 40%, время онбординга сократилось вдвое.",
     },
     {
       id: 3,
-      title: "Монитор системных ресурсов",
-      shortDescription: "Комплексный инструмент мониторинга с аналитикой в реальном времени.",
-      description: "Комплексный инструмент мониторинга системы с аналитикой производительности.",
+      title: "Маркетплейс услуг",
+      shortDescription: "Проектирование сервиса поиска и бронирования с нуля.",
+      description: "Полный цикл продуктового дизайна маркетплейса — от концепции до запуска.",
       image: "/placeholder.svg?height=400&width=600",
-      tags: ["C++", "Python", "Qt", "Linux"],
+      tags: ["Product Design", "Marketplace", "UX Research", "Прототипирование"],
       features: [
-        "Мониторинг CPU/памяти",
-        "Управление процессами",
-        "Сетевая аналитика",
-        "Отслеживание дискового пространства",
-        "Оповещения о производительности",
+        "Custdev с исполнителями и заказчиками",
+        "Карта пользовательских сценариев",
+        "Проектирование двусторонней платформы",
+        "Итеративное прототипирование",
+        "Успешный запуск MVP за 3 месяца",
       ],
       demoLink: "#",
-      githubLink: "#",
       fullDescription:
-        "Монитор системных ресурсов предоставляет данные о производительности в реальном времени. Построен на C++ с Python для анализа данных. Отслеживает использование CPU, потребление памяти, сетевой трафик и дисковые операции, предоставляя детальную аналитику и оповещения для системных администраторов.",
+        "Стартап обратился с идеей маркетплейса бытовых услуг. Провели custdev с обеими сторонами платформы — исполнителями и заказчиками. Выявили ключевые мотивации и барьеры. Спроектировали все сценарии: поиск, бронирование, оплату, отзывы. MVP запустили за 3 месяца, в первый месяц зарегистрировалось 500+ исполнителей.",
     },
     {
       id: 4,
-      title: "Проект компилятора",
-      shortDescription: "Компилятор собственного языка с оптимизациями.",
-      description: "Компилятор собственного языка программирования с продвинутыми оптимизациями.",
+      title: "Образовательная платформа",
+      shortDescription: "UX-аудит и редизайн онлайн-школы с 50 000 учеников.",
+      description: "Аудит существующей платформы и приоритизированный план улучшений.",
       image: "/placeholder.svg?height=400&width=600",
-      tags: ["C", "LLVM", "Assembly", "Python"],
-      features: ["Лексический анализ", "Синтаксический разбор", "Оптимизация кода", "Обработка ошибок", "Генерация ассемблера"],
+      tags: ["UX Audit", "EdTech", "Аналитика", "A/B тесты"],
+      features: [
+        "Анализ данных 50 000+ пользователей",
+        "Проведение юзабилити-тестирования",
+        "Выявлено 60+ UX-проблем",
+        "Приоритизация по RICE",
+        "Completion rate курсов вырос на 28%",
+      ],
       demoLink: "#",
-      githubLink: "#",
       fullDescription:
-        "Проект компилятора реализует собственный язык программирования с современными возможностями и оптимизациями. Построен на C и LLVM, включает комплексную обработку ошибок и оптимизацию кода. Выполняет лексический анализ, синтаксический разбор, семантический анализ и генерирует оптимизированный ассемблерный код.",
+        "Онлайн-школа столкнулась с высоким отвалом — только 30% начавших курс доходили до конца. Провели глубокий анализ: изучили данные аналитики, провели юзабилити-тесты, собрали обратную связь. Нашли корневые причины отвала и предложили конкретные решения с приоритизацией. После внедрения completion rate вырос до 58%.",
     },
     {
       id: 5,
-      title: "Распределённая БД",
-      shortDescription: "Распределённая база данных с высокой доступностью.",
-      description: "Распределённая база данных с высокой доступностью и отказоустойчивостью.",
+      title: "Медицинский сервис",
+      shortDescription: "Дизайн приложения для записи к врачу и телемедицины.",
+      description: "Проектирование интерфейса для записи к врачу и онлайн-консультаций.",
       image: "/placeholder.svg?height=400&width=600",
-      tags: ["C++", "Rust", "gRPC", "Redis"],
-      features: ["Репликация данных", "Шардирование", "Отказоустойчивость", "Балансировка нагрузки", "Управление транзакциями"],
+      tags: ["HealthTech", "Mobile", "Accessibility", "UX Research"],
+      features: [
+        "Исследование с врачами и пациентами",
+        "Проектирование с учётом accessibility",
+        "Сценарий экстренной помощи",
+        "Интеграция видеоконсультаций",
+        "Рейтинг приложения 4.8 в App Store",
+      ],
       demoLink: "#",
-      githubLink: "#",
       fullDescription:
-        "Распределённая БД обеспечивает высокую доступность и отказоустойчивость для масштабных приложений. Построена на C++ и Rust для производительности, реализует репликацию данных, шардирование и автоматическое переключение при сбоях. Включает инструменты мониторинга и управления.",
+        "Медицинский стартап хотел упростить доступ к врачу — особенно для пожилых пользователей. Провели исследование с пациентами разного возраста и практикующими врачами. Спроектировали интерфейс с упором на accessibility: крупные кнопки, понятные формулировки, минимум шагов до записи. Рейтинг в App Store — 4.8, 70% пользователей старше 45 лет.",
     },
     {
       id: 6,
-      title: "Фреймворк нейросетей",
-      shortDescription: "Deep learning фреймворк, оптимизированный для производительности.",
-      description: "Deep learning фреймворк с CUDA-ускорением и оптимизациями.",
+      title: "Финтех-продукт для инвестиций",
+      shortDescription: "Упрощение сложного инвестиционного продукта для новичков.",
+      description: "Редизайн инвестиционного приложения для массовой аудитории.",
       image: "/placeholder.svg?height=400&width=600",
-      tags: ["C++", "CUDA", "Python", "CMake"],
+      tags: ["FinTech", "Simplicity", "Onboarding", "UI Design"],
       features: [
-        "CUDA-ускорение",
-        "Автоматическое дифференцирование",
-        "Оптимизация моделей",
-        "Пайплайны обучения",
-        "Профилирование производительности",
+        "Анализ барьеров входа для новичков",
+        "Упрощённый онбординг за 3 шага",
+        "Понятный интерфейс портфеля",
+        "Обучающие подсказки",
+        "Рост активации новых пользователей на 55%",
       ],
       demoLink: "#",
-      githubLink: "#",
       fullDescription:
-        "Фреймворк нейросетей обеспечивает высокопроизводительные возможности глубокого обучения. Построен на C++ с CUDA-ускорением, предлагает инструменты для построения и обучения нейронных сетей. Включает автоматическое дифференцирование, оптимизацию моделей и детальное профилирование производительности.",
+        "Инвестиционная платформа теряла новых пользователей — сложный интерфейс пугал тех, кто никогда не инвестировал. Исследовали барьеры входа, провели конкурентный анализ. Переработали онбординг, упростили дашборд портфеля, добавили контекстные подсказки. Активация новых пользователей выросла на 55%, отвал на этапе регистрации снизился в 2 раза.",
     },
   ]
 
@@ -148,7 +152,7 @@ export default function Projects() {
           <Badge variant="outline" className="mb-4">
             Портфолио
           </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Избранные проекты</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Избранные кейсы</h2>
           <div className="w-20 h-1 bg-primary mx-auto"></div>
         </motion.div>
 
@@ -188,126 +192,95 @@ export default function Projects() {
                         animate={{ opacity: 1, height: "auto" }}
                         exit={{ opacity: 0, height: 0 }}
                         transition={{ duration: 0.3 }}
-                        className="p-6 border-t"
+                        className="p-6"
                       >
-                        <div className="space-y-4">
-                          <div className="flex flex-wrap gap-2">
-                            {project.tags.map((tag, i) => (
-                              <Badge key={i} variant="secondary">
-                                {tag}
-                              </Badge>
-                            ))}
-                          </div>
-
-                          <div className="space-y-2">
-                            <h4 className="font-semibold">Ключевые возможности:</h4>
-                            <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
-                              {project.features.map((feature, i) => (
-                                <li key={i}>{feature}</li>
-                              ))}
-                            </ul>
-                          </div>
-
-                          <div className="flex gap-4 pt-2">
-                            <Button
-                              size="sm"
-                              variant="outline"
-                              onClick={(e) => {
-                                e.stopPropagation()
-                                window.open(project.githubLink, "_blank")
-                              }}
-                            >
-                              <Github className="h-4 w-4 mr-2" />
-                              Код
+                        <p className="text-muted-foreground mb-4">{project.description}</p>
+                        <div className="flex flex-wrap gap-2 mb-4">
+                          {project.tags.map((tag, i) => (
+                            <Badge key={i} variant="secondary">{tag}</Badge>
+                          ))}
+                        </div>
+                        <ul className="space-y-1 mb-4">
+                          {project.features.map((feature, i) => (
+                            <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
+                              <span className="text-primary mt-0.5">•</span>
+                              {feature}
+                            </li>
+                          ))}
+                        </ul>
+                        <div className="flex gap-2">
+                          <Button
+                            size="sm"
+                            variant="outline"
+                            onClick={(e) => {
+                              e.stopPropagation()
+                              setSelectedProject(project)
+                            }}
+                          >
+                            Подробнее
+                          </Button>
+                          {project.demoLink !== "#" && (
+                            <Button size="sm" asChild onClick={(e) => e.stopPropagation()}>
+                              <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
+                                <ExternalLink className="h-4 w-4 mr-1" />
+                                Смотреть
+                              </a>
                             </Button>
-                            <Button
-                              size="sm"
-                              onClick={(e) => {
-                                e.stopPropagation()
-                                window.open(project.demoLink, "_blank")
-                              }}
-                            >
-                              <ExternalLink className="h-4 w-4 mr-2" />
-                              Демо
-                            </Button>
-                            <Button
-                              size="sm"
-                              variant="outline"
-                              onClick={(e) => {
-                                e.stopPropagation()
-                                setSelectedProject(project)
-                              }}
-                            >
-                              Подробнее
-                            </Button>
-                          </div>
+                          )}
                         </div>
                       </motion.div>
                     )}
                   </AnimatePresence>
 
-                  <div className="p-4 text-center">
-                    <ChevronDown
-                      className={`w-6 h-6 mx-auto transition-transform duration-300 ${
-                        expandedProject === project.id ? "rotate-180" : ""
-                      }`}
-                    />
-                  </div>
+                  {expandedProject !== project.id && (
+                    <div className="p-4 flex flex-wrap gap-2">
+                      {project.tags.slice(0, 3).map((tag, i) => (
+                        <Badge key={i} variant="secondary">{tag}</Badge>
+                      ))}
+                      {project.tags.length > 3 && (
+                        <Badge variant="secondary">+{project.tags.length - 3}</Badge>
+                      )}
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             </motion.div>
           ))}
         </div>
-      </div>
 
-      {selectedProject && (
         <Dialog open={!!selectedProject} onOpenChange={() => setSelectedProject(null)}>
-          <DialogContent className="max-w-3xl">
-            <DialogHeader>
-              <DialogTitle>{selectedProject.title}</DialogTitle>
-              <DialogDescription>
-                <div className="flex flex-wrap gap-2 mt-2 mb-4">
-                  {selectedProject.tags.map((tag, i) => (
-                    <Badge key={i} variant="secondary">
-                      {tag}
-                    </Badge>
-                  ))}
-                </div>
-              </DialogDescription>
-            </DialogHeader>
-            <div className="space-y-4">
+          {selectedProject && (
+            <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
+              <DialogHeader>
+                <DialogTitle>{selectedProject.title}</DialogTitle>
+                <DialogDescription>{selectedProject.description}</DialogDescription>
+              </DialogHeader>
               <img
                 src={selectedProject.image || "/placeholder.svg"}
                 alt={selectedProject.title}
-                className="w-full rounded-md object-cover aspect-video"
+                className="w-full aspect-video object-cover rounded-lg"
               />
+              <div className="flex flex-wrap gap-2">
+                {selectedProject.tags.map((tag, i) => (
+                  <Badge key={i} variant="secondary">{tag}</Badge>
+                ))}
+              </div>
               <p className="text-muted-foreground">{selectedProject.fullDescription}</p>
-              <div className="space-y-4">
-                <h4 className="font-semibold">Ключевые возможности:</h4>
-                <ul className="list-disc list-inside text-muted-foreground space-y-2">
+              <div>
+                <h4 className="font-semibold mb-2">Результаты:</h4>
+                <ul className="space-y-1">
                   {selectedProject.features.map((feature, i) => (
-                    <li key={i}>{feature}</li>
+                    <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
+                      <span className="text-primary mt-0.5">•</span>
+                      {feature}
+                    </li>
                   ))}
                 </ul>
               </div>
-              <div className="flex justify-end gap-4 mt-4">
-                <Button variant="outline" asChild>
-                  <a href={selectedProject.githubLink} target="_blank" rel="noopener noreferrer">
-                    <Github className="h-4 w-4 mr-2" />
-                    Смотреть код
-                  </a>
-                </Button>
-                <Button asChild>
-                  <a href={selectedProject.demoLink} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    Демо
-                  </a>
-                </Button>
-              </div>
-            </div>
-          </DialogContent>
+            </DialogContent>
+          )}
         </Dialog>
-      )}
+      </div>
     </section>
   )
 }

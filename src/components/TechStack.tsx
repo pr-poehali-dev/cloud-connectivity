@@ -2,85 +2,82 @@ import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
-import { Code2, Layout, Server, Database, Wrench, Binary } from "lucide-react"
+import Icon from "@/components/ui/icon"
 
 export default function TechStack() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
 
   const technologies = {
-    languages: {
-      icon: <Code2 className="h-6 w-6" />,
-      title: "Языки программирования",
-      description: "Основные языки для системной и прикладной разработки",
+    research: {
+      icon: "Search",
+      title: "UX-исследования",
+      description: "Понимание пользователей и их потребностей",
       skills: [
-        { name: "C++", level: 90 },
-        { name: "C", level: 85 },
-        { name: "Java", level: 88 },
-        { name: "Ruby", level: 82 },
-        { name: "Python", level: 85 },
-        { name: "TypeScript", level: 90 },
-        { name: "JavaScript", level: 90 },
+        { name: "Пользовательские интервью", level: 92 },
+        { name: "Юзабилити-тестирование", level: 90 },
+        { name: "Конкурентный анализ", level: 88 },
+        { name: "Jobs To Be Done", level: 85 },
+        { name: "Customer Journey Map", level: 87 },
       ],
     },
-    concepts: {
-      icon: <Binary className="h-6 w-6" />,
-      title: "Инженерные концепции",
-      description: "Фундаментальные принципы разработки ПО",
+    design: {
+      icon: "PenTool",
+      title: "Проектирование",
+      description: "От концепции до готового интерфейса",
       skills: [
-        { name: "Структуры данных", level: 95 },
-        { name: "Алгоритмы", level: 90 },
-        { name: "ООП", level: 95 },
-        { name: "Паттерны", level: 85 },
-        { name: "System Design", level: 80 },
-        { name: "Многопоточность", level: 85 },
-      ],
-    },
-    frontend: {
-      icon: <Layout className="h-6 w-6" />,
-      title: "Frontend-разработка",
-      description: "Современные веб-технологии",
-      skills: [
-        { name: "React", level: 90 },
-        { name: "Next.js", level: 85 },
-        { name: "HTML/CSS", level: 95 },
-        { name: "Tailwind CSS", level: 95 },
-        { name: "Redux", level: 85 },
-        { name: "WebGL", level: 75 },
-      ],
-    },
-    backend: {
-      icon: <Server className="h-6 w-6" />,
-      title: "Backend-разработка",
-      description: "Серверные фреймворки и технологии",
-      skills: [
-        { name: "Node.js", level: 85 },
-        { name: "Express", level: 80 },
-        { name: "Spring Boot", level: 85 },
-        { name: "Ruby on Rails", level: 80 },
-      ],
-    },
-    database: {
-      icon: <Database className="h-6 w-6" />,
-      title: "Базы данных",
-      description: "Управление и оптимизация БД",
-      skills: [
-        { name: "MongoDB", level: 85 },
-        { name: "PostgreSQL", level: 80 },
-        { name: "MySQL", level: 75 },
-        { name: "Redis", level: 70 },
+        { name: "Wireframing", level: 95 },
+        { name: "Прототипирование", level: 92 },
+        { name: "UI-дизайн", level: 90 },
+        { name: "Адаптивный дизайн", level: 88 },
+        { name: "Дизайн-системы", level: 85 },
       ],
     },
     tools: {
-      icon: <Wrench className="h-6 w-6" />,
+      icon: "Figma",
       title: "Инструменты",
-      description: "Средства и окружения для разработки",
+      description: "Профессиональный инструментарий дизайнера",
       skills: [
-        { name: "Git", level: 90 },
-        { name: "Docker", level: 80 },
-        { name: "AWS", level: 75 },
-        { name: "Linux/Unix", level: 85 },
-        { name: "CMake", level: 80 },
-        { name: "Visual Studio", level: 85 },
+        { name: "Figma", level: 95 },
+        { name: "FigJam", level: 90 },
+        { name: "Miro", level: 88 },
+        { name: "Notion", level: 85 },
+        { name: "Jira", level: 80 },
+      ],
+    },
+    product: {
+      icon: "LayoutDashboard",
+      title: "Продуктовое мышление",
+      description: "Баланс между бизнесом и пользователем",
+      skills: [
+        { name: "Product Discovery", level: 88 },
+        { name: "Приоритизация (RICE, ICE)", level: 85 },
+        { name: "Метрики и аналитика", level: 82 },
+        { name: "A/B тестирование", level: 80 },
+        { name: "Roadmap-планирование", level: 83 },
+      ],
+    },
+    communication: {
+      icon: "MessageCircle",
+      title: "Коммуникация",
+      description: "Работа в команде и презентация решений",
+      skills: [
+        { name: "Презентация дизайна", level: 90 },
+        { name: "Работа с разработчиками", level: 88 },
+        { name: "Фасилитация воркшопов", level: 85 },
+        { name: "Документация", level: 87 },
+        { name: "Agile / Scrum", level: 82 },
+      ],
+    },
+    motion: {
+      icon: "Sparkles",
+      title: "Дополнительно",
+      description: "Расширенные компетенции",
+      skills: [
+        { name: "Motion-дизайн", level: 78 },
+        { name: "Accessibility (a11y)", level: 85 },
+        { name: "Micro-interactions", level: 80 },
+        { name: "Иконографика", level: 82 },
+        { name: "Брендинг", level: 75 },
       ],
     },
   }
@@ -109,7 +106,7 @@ export default function TechStack() {
           <Badge variant="outline" className="mb-4">
             Навыки
           </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Технический стек</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Чем я владею</h2>
           <div className="w-20 h-1 bg-primary mx-auto"></div>
         </motion.div>
 
@@ -131,7 +128,9 @@ export default function TechStack() {
               >
                 <CardContent className="p-6">
                   <div className="flex items-center gap-4 mb-4">
-                    <div className="bg-primary/10 p-3 rounded-full">{category.icon}</div>
+                    <div className="bg-primary/10 p-3 rounded-full">
+                      <Icon name={category.icon} className="h-6 w-6 text-primary" fallback="Star" />
+                    </div>
                     <div>
                       <h3 className="text-lg font-semibold">{category.title}</h3>
                       <p className="text-sm text-muted-foreground">{category.description}</p>
@@ -200,8 +199,8 @@ export default function TechStack() {
           className="mt-12 text-center text-muted-foreground"
         >
           <p className="max-w-2xl mx-auto">
-            Благодаря опыту в низкоуровневом системном программировании и современной веб-разработке,
-            я применяю глубокое понимание принципов инженерии ПО в каждом проекте.
+            Сочетаю глубокое понимание пользователей с системным подходом к проектированию —
+            чтобы создавать продукты, которые работают для людей и помогают бизнесу расти.
           </p>
         </motion.div>
       </div>

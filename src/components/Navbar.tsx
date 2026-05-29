@@ -31,8 +31,8 @@ export default function Navbar() {
   const navLinks = [
     { name: "Главная", href: "home" },
     { name: "Обо мне", href: "about" },
-    { name: "Стек", href: "tech-stack" },
-    { name: "Проекты", href: "projects" },
+    { name: "Навыки", href: "tech-stack" },
+    { name: "Кейсы", href: "projects" },
     { name: "Отзывы", href: "testimonials" },
     { name: "Контакты", href: "contact" },
   ]
@@ -47,7 +47,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <button onClick={() => scrollToSection("home")} className="text-2xl font-bold text-primary">
-            Code<span className="text-destructive">Forge</span>
+            Sergey<span className="text-destructive">Design</span>
           </button>
 
           {/* Desktop Navigation */}
