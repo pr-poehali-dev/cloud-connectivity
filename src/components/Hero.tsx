@@ -89,7 +89,7 @@ export default function Hero() {
                 <img
                   src="https://cdn.poehali.dev/projects/296e8033-6458-4305-8c7a-be942dcce946/bucket/eb9793ec-9f56-44fa-b4c1-4773feace815.jpg"
                   alt="Сергей Золотухин"
-                  className="w-full h-full object-cover object-[center_20%]"
+                  className="w-full h-full object-cover object-[center_5%]"
                 />
               </div>
             </div>
